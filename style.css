@@ -1,0 +1,255 @@
+/* start landing */
+.landing{
+    background-color: #fafafa;
+    padding: 20px;
+
+
+}
+.landing .continer .row .image{
+    position: relative;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 2s;
+}
+@keyframes move {
+    0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -30px;
+  }
+
+    
+}
+.landing .continer .row .image img{
+    border-radius: 20px;
+}
+/* end landing */
+/* start about */
+.about .continer h2{
+    position: relative;
+    padding-bottom: 10px;
+    text-shadow:  0 0 30px black;
+}
+/* end about */
+/* start service */
+.service .continer h2{
+    position: relative;
+    padding-bottom: 10px;
+    text-shadow:  0 0 30px black;
+
+}
+.service .content .row .box{
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+}
+.service .content .row .box::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    right: -40px;
+    top: -40px;
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: 2;
+
+}
+.service .content .row .box:hover::before{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: rgb(0, 122, 255,10%);
+
+}
+.service .content .row .box:hover p{
+    color: black !important;
+}
+.service .content .row .box:hover i{
+    color: black !important;
+    background-color: white !important;
+}
+.service .end .row .image{
+    position: relative;
+}
+.service .end .row .image .text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform:translate(-50%,-70%);
+    background-color: #222;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    color: wheat;
+}
+.service .end .row .image .text a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.service .end .row .image img{
+    border-radius: 15px;
+}
+.service .end .row .image .text:hover{
+    background-color: rgb(51, 51, 178);
+    color: white;
+}
+.service .end .row .image .text:hover a{
+    color: white !important;
+}
+.service .end .row .image .text:hover i{
+    color: white !important;
+}
+/* end service */
+/* start feay */
+.feat{
+    margin-top: 40px;
+}
+.feat .continer h4{
+    position: relative;
+    padding-bottom: 10px;
+    text-shadow:  0 0 30px black;
+
+}
+/* end feat */
+/* start portfilo */
+.portfilo .content .tab-content  .row div{
+    position: relative;
+    overflow: hidden;
+}
+.portfilo .content .tab-content .row div::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color:rgb(0, 0, 0,50%);
+    z-index: 2;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.portfilo .content .tab-content .row div:hover::before{
+    width: 94%;
+    border-radius: 5px;
+}
+/* end portfilo */
+/* start team */
+.tab-content .content .row div{
+    perspective: 200px;
+}
+.team{
+    overflow:  hidden !important;
+}
+
+.team .content .row div .card{
+    transition: 1s;
+    position: relative;
+}
+.team .content .row div:hover .card{
+    transform: scale(0.9);
+}
+.team .content .row div#two{
+    position: relative !important;
+    overflow: hidden;
+}
+.team .content .row div#two .icon {
+    position: absolute !important;
+    right: -2000px;
+    margin-top: 26px;
+    transition: 1s;
+    top: 5px;
+}
+.team  .content .row div#two:hover .icon{
+    right: 38px !important;
+    margin-top: 30px;
+}
+/* end two */
+.team .content .row div#three{
+    position: relative !important;
+    overflow: hidden;
+}
+.team .content .row div#three .icon {
+    position: absolute !important;
+    right: -2000px;
+    margin-top: 10px;
+    transition: 1s;
+}
+.team  .content .row div#three:hover .icon{
+    right: 18px !important;
+    margin-top: 5px;
+    top: 0;
+}
+/* end three */
+.team .content .row div#four .icon {
+    position: absolute !important;
+    right: -2000px;
+    margin-top: 10px;
+    transition: 1s;
+}
+.team  .content .row div#four:hover .icon{
+    right: 18px !important;
+    margin-top: 0px;
+    top: 0;
+    background-color: red;
+}
+.team .content .row div#five .icon {
+    position: absolute !important;
+    right: -2000px;
+    margin-top: 10px;
+    transition: 1s;
+}
+.team  .content .row div#five:hover .icon{
+    right: 18px !important;
+    margin-top: 0px;
+    top: 0;
+    background-color: red;
+}
+/* end team */
+/* start test */
+.test .conttiner{
+    padding: 20px !important;
+}
+.test .continer .boxx{
+    padding: 20px !important;
+    padding-bottom: 20px !important;
+}
+/* end test */
+/* start blog */
+.rec .continer h4{
+    position: relative;
+    padding-bottom: 10px;
+    text-shadow:  0 0 30px black;
+
+}
+/* start recent */
+.rec .content .card:hover .image::after{
+    height: 0%;
+}
+/* end recent */
+/* start pricing */
+.pricing .continer h4 {
+    position: relative;
+    padding-bottom: 10px;
+    text-shadow:  0 0 30px black;
+}
+/* end pricing */
+/* start footer */
+.footer .continer a{
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 20px;
+    color: black !important;
+    transition: 0.4s;
+
+}
+.footer .continer a:hover i{
+    transform: scale(0.9);
+}
+/* end footer */
